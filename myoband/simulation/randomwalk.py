@@ -1,3 +1,7 @@
+"""
+Copyright, 23 March 2023, Henry Joseph Sheehy. All rights reserved.
+"""
+
 # Used for random walk:
 import numpy as np
 import random

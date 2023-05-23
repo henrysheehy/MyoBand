@@ -1,3 +1,7 @@
+"""
+Copyright, 23 March 2023, Henry Joseph Sheehy. All rights reserved.
+"""
+
 import argparse 
 
 import numpy as np
@@ -26,6 +30,7 @@ FILE=__file__.split(".py")[0]
 FILENAME=FILE.split("/")[-1]
 if FIG==None:
     FIG=FILE+".pdf"
+    PNG=FILE+".png"
 if IMPORT_DATA==None:
     IMPORT_DATA=FILE.split(FILENAME)[0]+"simulation.npz"
 if DATA==None:
@@ -100,6 +105,8 @@ def main(IMPORT_DATA):
     print(FIG)
     plt.tight_layout()
     plt.savefig(FIG,dpi=DPI)
+    print("Saving image as PNG:")
+    plt.savefig(PNG,dpi=DPI, transparent=True)
     print("Image saved with high DPI (required to see skeleton)")
     plt.close()
 

@@ -1,3 +1,7 @@
+"""
+Copyright, 23 March 2023, Henry Joseph Sheehy. All rights reserved.
+"""
+
 import numpy as np
 
 # A_Band

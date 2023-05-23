@@ -1,3 +1,7 @@
+"""
+Copyright, 23 March 2023, Henry Joseph Sheehy. All rights reserved.
+"""
+
 import numpy as np
 from myoband.analysis.gaussian import remove_noise
 from myoband.analysis.analysis import contour, skeleton
@@ -10,6 +14,7 @@ def main(IMPORT_DATA):
     FILE=__file__.split(".py")[0]
     FILENAME=FILE.split("/")[-1]
     FIG=FILE+".pdf"
+    PNG=FILE+".png"
     if IMPORT_DATA==None:
         IMPORT_DATA=FILE.split(FILENAME)[0]+"simulation.npz"
     DATA=FILE+".npz"
@@ -55,6 +60,10 @@ def main(IMPORT_DATA):
     print(FIG)
     plt.tight_layout()
     plt.savefig(FIG,dpi=DPI)
+    print("Saving image as PNG:")
+    print(PNG)
+    plt.tight_layout()
+    plt.savefig(PNG,dpi=DPI, transparent=True)
     print("Image saved with high DPI (required to see skeleton)")
     plt.close()
 

@@ -1,3 +1,7 @@
+"""
+Copyright, 23 March 2023, Henry Joseph Sheehy. All rights reserved.
+"""
+
 import numpy as np
 
 from myoband.simulation.a_band import A_Band
@@ -65,6 +69,8 @@ def main(n_bands):
     print(FIG)
     plt.tight_layout()
     plt.savefig(FIG,dpi=DPI)
+    print("Saving image as PNG:")
+    plt.savefig(PNG,dpi=DPI, transparent=True)
     print("Image saved with high DPI (required to see skeleton)")
     plt.close()
 
@@ -91,6 +97,8 @@ def main(n_bands):
     print(FIG_MASK)
     # plt.tight_layout()
     plt.savefig(FIG_MASK,dpi=DPI)
+    print("Saving image as PNG:")
+    plt.savefig(PNG_MASK,dpi=DPI, transparent=True)
     print("Image saved with high DPI (required to see skeleton)")
     plt.close()
 
@@ -104,6 +112,8 @@ def main(n_bands):
     print(FIG_PTS)
     plt.tight_layout()
     plt.savefig(FIG_PTS,dpi=DPI)
+    print("Saving image as PNG:")
+    plt.savefig(PNG_PTS,dpi=DPI, transparent=True)
     print("Image saved with high DPI (required to see skeleton)")
     plt.close()
 
@@ -114,6 +124,9 @@ MASK=FILE+"_mask"
 FIG=FILE+".pdf"
 FIG_PTS=PTS+".pdf"
 FIG_MASK=MASK+".pdf"
+PNG=FILE+".png"
+PNG_PTS=PTS+".png"
+PNG_MASK=MASK+".png"
 DATA=FILE+".npz"
 DPI=800
 

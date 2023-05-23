@@ -1,3 +1,7 @@
+"""
+Copyright, 23 March 2023, Henry Joseph Sheehy. All rights reserved.
+"""
+
 from myoband.simulation.a_band import A_Band
 from myoband.simulation.utils import get_compressed_slide
 from myoband.simulation.slide import Slide
@@ -39,6 +43,9 @@ def test(n_bands):
     print(FIG)
     plt.tight_layout()
     plt.savefig(FIG,dpi=DPI)
+    print("Saving image as PNG:")
+    print(PNG)
+    plt.savefig(PNG,dpi=DPI, transparent=True)
     print("Image saved with high DPI (required to see skeleton)")
     plt.close()
 
@@ -51,6 +58,7 @@ FILE=__file__.split(".py")[0]
 PTS=FILE+"_pts"
 MASK=FILE+"_mask"
 FIG=FILE+".pdf"
+PNG=FILE+'.png'
 DATA=FILE+".npz"
 DPI=800
 
