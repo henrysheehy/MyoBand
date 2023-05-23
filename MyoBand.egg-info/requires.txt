@@ -3,4 +3,4 @@ scipy
 matplotlib
 mycolorpy
 shapely
-skimage
+scikit-image

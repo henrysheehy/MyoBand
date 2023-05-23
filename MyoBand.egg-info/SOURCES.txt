@@ -34,8 +34,8 @@ myoband/__pycache__/plotting.cpython-310.pyc
 myoband/__pycache__/randomwalk.cpython-310.pyc
 myoband/__pycache__/simulation.cpython-310.pyc
 myoband/analysis/__init__.py
-myoband/analysis/analysis.py
 myoband/analysis/gaussian.py
+myoband/analysis/skeleton.py
 myoband/analysis/__pycache__/__init__.cpython-310.pyc
 myoband/analysis/__pycache__/analysis.cpython-310.pyc
 myoband/analysis/__pycache__/gaussian.cpython-310.pyc
