@@ -10,5 +10,5 @@ setup(
     license=open('LICENSE').read(),
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    install_requires=['numpy','scipy','matplotlib','mycolorpy','shapely','skimage'],
+    install_requires=['numpy','scipy','matplotlib','mycolorpy','shapely','skikit-image'],
 )
