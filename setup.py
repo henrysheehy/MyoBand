@@ -9,5 +9,6 @@ setup(
     packages=['myoband',],
     license=open('LICENSE').read(),
     long_description=open('README.md').read(),
-    install_requires=['numpy,scipy,matplotlib,mycolorpy,shapely,skimage'],
+    long_description_content_type='text/markdown',
+    install_requires=['numpy','scipy','matplotlib','mycolorpy','shapely','skimage'],
 )

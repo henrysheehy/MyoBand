@@ -27,14 +27,11 @@ The slide can be viewed using `myoband.plotting.imshow(example_slide)`.
 
 ![alt text](examples/skeleton_example.png)
 
-- Contours of the A bands can be extracted. 
-This feature is used to extract the separate A bands from
-the image slide.
+- Contours of the A bands can be extracted. This feature is used to extract the separate A bands from the image slide.
 
 ![alt text](examples/extract_labels.png)
 
-- Run `get_skeletons.py` to extract (a) a mask representation of the skeletons
-and (b) a list of points of the skeletons.
+- Run `get_skeletons.py` to extract (a) a mask representation of the skeletons and (b) a list of points of the skeletons.
 
 ![alt text](examples/skeleton_example_pts.png)
 
