@@ -15,6 +15,10 @@ Get the skeletons of the A bands by running `python3 get_skeletons.py -d DATA_LO
 
 ![alt text](examples/get_skeleton.png)
 
+## Installation
+- Install with `pip install myoband`
+- Clone this repo in order to use examples
+
 ## Details
 - For A band creation see `A_band.py` in tests folder.
 - An A band is created by adding thickness to 
