@@ -5,6 +5,8 @@ written in `Python`.
 > Note: if the text in the images is unreadable due to 
 dark mode, please open them in a new tab.
 
+[MyoBand in the Python repository](https://pypi.org/project/MyoBand)
+
 ## Simulation
 Run `python3 simulation.py` to simulate A bands.
 
